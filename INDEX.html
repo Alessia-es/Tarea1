@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de mí</title>
+  <!-- Enlace a Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Moon+Dance&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset básico y estilos globales */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      padding: 20px;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 40px;
+      font-weight: bold;
+      color: #333;
+    }
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    /* Contenedores de sección */
+    .box {
+      background-color: #FFE6B3;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .section-light {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    /* Flexbox básico */
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    /* Estilos para las imágenes con sombra dorada */
+    .gold-shadow {
+      /* Sombra principal y una secundaria para dar mayor realismo */
+      box-shadow: 0 8px 20px rgba(255, 215, 0, 0.6), 0 4px 10px rgba(255, 215, 0, 0.4);
+    }
+    /* Sección "On the Blog" */
+    .blog-images div {
+      text-align: center;
+    }
+    .blog-images img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .blog-images p {
+      margin-top: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #555;
+    }
+    /* Sección de lista e imágenes locales */
+    .local-section {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .local-section .list {
+      flex: 1;
+      min-width: 300px;
+    }
+    .local-section ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      text-align: left;
+    }
+    .local-images {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .local-images img {
+      width: 290px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .vertical-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Acerca de mí</h1>
+  </header>
+  <main>
+    <!-- Primera caja rosada -->
+    <div class="box">
+      <h2 class="custom-title">Un poco sobre mi</h2>
+      <div style="display: flex; align-items: center; gap: 20px;">
+     <p style="font-size: 25px;">Mi nombre es Alessandra, soy la mayor de 3 hermanos, me interesa mucho el turismo,     estudio Ing. Computación y Sistemas porque es adaptable y además porque combina la creatividad con la lógica. Mi género de música preferido es el Pop y Kpop, juego fútbol y en mis tiempos libres salgo a caminar con Sam o juego Roblox (Bloxy Bingo).</p>
+    <img src="Website/me.jpg" alt="me" style="width: 300px; height: auto; border-radius: 10px;">
+    </div>
+   </div>
+    <!-- Sección "Mirada hacia al futuro" -->
+    <div class="section-light">
+      <h2 class="section-title">Mirada hacia el futuro</h2>
+      <div class="flex-container blog-images">
+        <div>
+          <img src="https://www.actitudfem.com/media/files/styles/big_img/public/images/2014/12/notaamable.jpg" alt="Persona">
+          <p>Persona</p>
+        </div>
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQppLLmcux76irs6IzZ11uV1B-5HCdlBiVMlg&s" alt="Académico">
+          <p>Académico</p>
+        </div>
+        <div>
+          <img src="https://www.incasperu.com/wp-content/uploads/2021/03/consejos-prepararse-viajar-Peru-Espana-Incas-Peru.jpg" alt="Vida">
+          <p>Vida</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segunda caja rosada: Lista e imágenes locales -->
+    <div class="box">
+      <div class="local-section">
+        <!-- Lista de cosas que me gustan -->
+        <div class="list">
+          <h2 class="custom-title">Cosas que me gustan</h2>
+          <br>
+          <br>
+          <ul style="font-size: 22px;"> 
+            <li>Caminar por la playa al atardecer</li>
+            <br>
+            <li>Tomar fotos de paisajes</li>
+            <br>
+            <li>Pasar mi tiempo con Sam</li>
+            <br>
+            <li>Las reuniones familiares</li>
+            <br>
+            <li>Viajar y conocer nuevos lugares</li>
+            <br>
+            <li>Escuchar música mientras está lloviendo</li>
+          </ul>
+        </div>
+        <!-- Contenedor de imágenes locales -->
+        <div class="local-images">
+          <!-- Imagen de Sam (se mantiene independiente) -->
+          <div>
+            <img src="Website/Sam.jpg" alt="Sam">
+          </div>
+          <!-- Contenedor vertical para Puno y Catedral -->
+          <div class="vertical-stack">
+            <img src="Website/Puno.jpg" alt="Puno">
+            <img src="Website/catedral.jpg" alt="Catedral">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
+
